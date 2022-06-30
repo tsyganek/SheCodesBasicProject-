@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌶🥬 BYG Club 🥕🥦</title>
+    <style>
+      body {
+        background: linear-gradient(#f8f4e3, #c5d6a1);
+        width: 50%;
+        margin: 0 auto;
+      }
+      h1 {
+        font-family: "Lucida Sans Typewriter", "Lucida Console", monaco,
+          "Bitstream Vera Sans Mono", monospace;
+        text-transform: uppercase;
+        color: #032;
+        text-align: center;
+        font-size: 50px;
+        line-height: 1.2;
+      }
+
+      h2 {
+        text-align: center;
+        color: orange;
+        font-weight: 700;
+        background-color: #032;
+        font-family: "PT Mono", monospace;
+        line-height: 1.5;
+        padding: 10px 10px;
+        border-radius: 5px;
+      }
+
+      p {
+        font-family: "PT Mono", monospace;
+        margin: 24px 0;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: justify;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        font-family: "PT Mono", monospace;
+        color: #032;
+        text-align: center;
+      }
+
+      a:hover {
+        cursor: pointer;
+        color: orange;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      span {
+        font-weight: bold;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: orange;
+        font-family: "PT Mono", monospace;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: bold;
+        border-radius: 15px;
+        border: 1px;
+        box-shadow: 0px 4px 4px 0 #628e3d;
+        transition: all 300ms ease-in-out;
+      }
+
+      button:hover {
+        background-color: #032;
+        cursor: pointer;
+        color: orange;
+      }
+
+      .know-more-link {
+        font-size: 20px;
+      }
+
+      .intro-text {
+        text-align: center;
+      }
+
+      .link-container {
+        text-align: center;
+      }
+
+      .copyright-text {
+        font-size: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🌾🫑🪴</h1>
+    <h1 class>Backyard Gardens Club</h1>
+    <h2>🌶🥬 Grow your own organic veggies 🥕🥦</h2>
+    <p class="intro-text">
+      Eating lots of veggies and greens is good for your health. <br />
+      Growing them with your own hands <span>is good for your life</span>!
+    </p>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/122/original/Pocket_Garden_.jpeg?1652366533"
+      alt="people gardening"
+    />
+
+    <p>
+      Veggie gardening is socially responsible and mindful. It brings benefits
+      to your budget, mental state, and even
+      <em>apocalyptic survival skillset</em>!!!
+    </p>
+
+    <p>
+      Join the <strong>Backyard Gardens Club</strong> and set up a compact
+      garden with organic vegetables, greens, and herbs in your backyard or
+      windowsill.
+    </p>
+
+    <div class="link-container">
+      <a
+        class="know-more-link"
+        href="https://www.masterclass.com/articles/how-to-start-a-backyard-garden#how-to-start-a-backyard-garden"
+        target="blank"
+        >Know more to grow more 👈
+      </a>
+    </div>
+
+    <hr />
+
+    <p>
+      Subscribe to our <b>weekly newsletter</b> and get tips on setting up,
+      managing, and receiving the most from your backyard garden.
+    </p>
+
+    <div><button>Subscribe</button></div>
+
+    <p class="copyright-text">
+      Designed & developed by
+      <a
+        href="https://www.linkedin.com/in/kateryna-tsygankova-a37099178/"
+        target="blank"
+        >Kateryna 🇺🇦 Tsygankova</a
+      >
+    </p>
+    <script>
+      function welcomeUser() {
+        let name = prompt("What is your name?");
+        let language = prompt("What language do you speak?");
+        let email = prompt("Write your email ✉️");
+        let message;
+
+        language === language.toLowerCase();
+        if (
+          language === "українська" ||
+          language === "ukrainian" ||
+          language === "ua" ||
+          language === "🇺🇦"
+        ) {
+          message = alert(
+            `Ласкаво просимо, ${name}! Твій лист прийде вже в четвер! Вдалого садівництва 🥦!`
+          );
+        } else if (
+          language === "français" ||
+          language === "fr" ||
+          language === "🇫🇷"
+        ) {
+          message = alert(
+            `Bienvenue, ${name}! Votre newsletter arrive mardi. Bon jardinage 🍅!`
+          );
+        } else if (
+          language === "espanol" ||
+          language === "español" ||
+          language === "🇪🇸" ||
+          language === "esp"
+        ) {
+          message = alert(
+            `¡Bienvenido, ${name}! Tu newsletter llega el miercoles. ¡Feliz jardinería 🥬!`
+          );
+        } else {
+          message = alert(
+            `Welcome, ${name}! Your newsletter arrives on Monday. Happy gardening 🫑!`
+          );
+        }
+      }
+
+      let subscribeButton = document.querySelector("button");
+      subscribeButton.addEventListener("click", welcomeUser);
+    </script>
+  </body>
+</html>
